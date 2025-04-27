@@ -215,3 +215,5 @@ Yeni özellikler, hata düzeltmeleri veya iyileştirmeler için issue açabilir 
 MIT Lisansı. Detaylar için `LICENSE` dosyasına bakın.
 
 ## Hata çözümleri için discord.gg/vsc
+
+[![Discord Banner](https://api.weblutions.com/discord/invite/vsc/)](https://discord.gg/vsc)
