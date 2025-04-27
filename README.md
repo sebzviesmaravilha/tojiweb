@@ -1,4 +1,4 @@
-# 40 Starda Paylaşılıcak
+# 30 Starda Paylaşılıcak
 
 ## Demo: https://oxyportfolio.vercel.app/
 
