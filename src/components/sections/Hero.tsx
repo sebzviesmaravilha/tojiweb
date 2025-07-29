@@ -307,5 +307,8 @@ const Hero: React.FC = () => {
         visibility: visible;
       }
     `}</style>
-  </section>
-);
+   </section>
+  );
+};
+
+export default Hero;
