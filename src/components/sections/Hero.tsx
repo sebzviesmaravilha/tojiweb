@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
   <section
     id="home"
     ref={containerRef}
-    className="relative min-h-screen pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-950"
+    className=className="relative min-h-screen pt-20 pb-10"
   >
       
     <div className="container px-4 mx-auto">
