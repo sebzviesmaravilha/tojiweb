@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
   return (
     <section id="home" ref={containerRef} className="relative min-h-screen pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
       <div className="container px-4 mx-auto">
-        <div className="flex flex-col items-start gap-8 lg:flex-row">
+        <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
           {/* Left Side - Enhanced Discord Profile */}
           <motion.div
             className="w-full lg:w-[450px] bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden"
