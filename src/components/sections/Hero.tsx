@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, Code2, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
+import { Mail, Code2, Sparkles, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
 import { useAppStore } from '../../store';
 import DiscordStatus from '../DiscordStatus';
 import SpotifyNowPlaying from '../SpotifyNowPlaying';
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
   
 
 
-  const userBadgeIds = ['nitro', 'partner', 'verified_developer', 'early_supporter' ];
+  const userBadgeIds = ['nitro', 'early_supporter', 'verified_developer', 'partner' ];
 
 
   const currentActivity: ActivityType | null =
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
   return (
     <section id="home" ref={containerRef} className="relative min-h-screen pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
       <div className="container px-4 mx-auto">
-        <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
+        <div className="flex flex-col items-start gap-8 lg:flex-row">
           {/* Left Side - Enhanced Discord Profile */}
           <motion.div
             className="w-full lg:w-[450px] bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden"
@@ -188,22 +188,28 @@ const Hero: React.FC = () => {
 
                 {/* User Badges - Discord Style */}
                 <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-1 text-xs font-medium text-blue-600 bg-blue-100 rounded-md dark:bg-blue-900/30 dark:text-blue-400">
+                    Developer
+                  </span>
+                  <span className="px-2 py-1 text-xs font-medium text-purple-600 bg-purple-100 rounded-md dark:bg-purple-900/30 dark:text-purple-400">
+                    Server Booster
+                  </span>
                   <span className="px-2 py-1 text-xs font-medium text-green-600 bg-green-100 rounded-md dark:bg-green-900/30 dark:text-green-400">
-                    4 0 3
+                    discord.gg/vsc üyesi
                   </span>
                 </div>
 
                 {/* About - Discord style note */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">hakkımda</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ABOUT ME</h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    {discordUser?.about || 'mami iste cok bilgiye gerek yok gizli adamlariz'}
+                    {discordUser?.about || 'Modern web deneyimleri oluşturmaya odaklanan tutkulu bir geliştirici. React, TypeScript ve Node.js ekosisteminde uzmanlaşmış full-stack developer.'}
                   </p>
                 </div>
 
                 {/* Discord Activity Status */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">aktivite</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ACTIVITY</h3>
                   {currentActivity ? (
                     <div className="space-y-1">
                       <div className="flex items-center gap-2">
@@ -237,50 +243,70 @@ const Hero: React.FC = () => {
 
                 {/* Spotify Integration - Discord style */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">spotify</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">SPOTIFY</h3>
                   <SpotifyNowPlaying />
                 </div>
 
                 {/* Roles - Discord Style */}
                 <div className="mb-4">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">tags</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ROLES</h3>
                   <div className="flex flex-wrap gap-2">
-<span
-  className="px-2 py-1 text-xs font-medium rounded-md"
-  style={{ backgroundColor: 'rgba(88, 101, 242, 0.2)', color: 'rgb(88, 101, 242)' }}
->
-  #toji
-</span>
-<span
-  className="px-2 py-1 text-xs font-medium rounded-md"
-  style={{ backgroundColor: 'rgba(235, 69, 158, 0.2)', color: 'rgb(235, 69, 158)' }}
->
-  #aphe
-</span>
-
+                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(88, 101, 242, 0.2)', color: 'rgb(88, 101, 242)' }}>
+                      @Made
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(235, 69, 158, 0.2)', color: 'rgb(235, 69, 158)' }}>
+                      @By
+                    </span>
+                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(87, 242, 135, 0.2)', color: 'rgb(87, 242, 135)' }}>
+                      @Oxy
+                    </span>
                   </div>
                 </div>
 
                 {/* Social Links - Discord Style */}
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">BAĞLANTILAR</h3>
+                  <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">CONNECTIONS</h3>
                   <div className="flex flex-wrap gap-3">
                     <motion.a
-                      href="https://discord.gg/403"
+                      href="https://github.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Send size={16} />
-                      <span className="text-sm font-medium">Discord</span>
+                      <Github size={16} />
+                      <span className="text-sm font-medium">GitHub</span>
                     </motion.a>
-                   </div>
-          </div>
-        </motion.div>
-      </div>
-    </div>
+                    <motion.a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
+                      whileHover={{ y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Twitter size={16} />
+                      <span className="text-sm font-medium">Twitter</span>
+                    </motion.a>
+                    <motion.a
+                      href="https://instagram.com/hs.kalite"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
+                      whileHover={{ y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Instagram size={16} />
+                      <span className="text-sm font-medium">Instagram</span>
+                    </motion.a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+                      </div>
+
       {/* Tooltip styles */}
       <style jsx global>{`
         .tooltip-container {
