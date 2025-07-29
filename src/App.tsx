@@ -50,7 +50,7 @@ function App() {
   }, [effectiveTheme]);
 
   return (
-    <div className="min-h-screen text-gray-900 transition-colors duration-300 bg-white dark:bg-slate-900 dark:text-white">
+<div className="min-h-screen text-gray-900 transition-colors duration-300 bg-custom-bg-dark bg-cover bg-center bg-no-repeat bg-fixed dark:text-white">
       {/* Custom Cursor (only on non-touch devices) */}
       <div className="hidden md:block">
         <CustomCursor />
