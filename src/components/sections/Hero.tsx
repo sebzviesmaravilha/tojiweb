@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Code2, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
-import { FaDiscord } from 'react-icons/fa';
+import { Send, Mail, Code2, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
 import { useAppStore } from '../../store';
 import DiscordStatus from '../DiscordStatus';
 import SpotifyNowPlaying from '../SpotifyNowPlaying';
@@ -274,7 +273,7 @@ const Hero: React.FC = () => {
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <FaDiscord size={16} />
+                      <Send size={16} />
                       <span className="text-sm font-medium">Discord</span>
                     </motion.a>
                   </div>
