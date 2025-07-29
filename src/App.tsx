@@ -20,7 +20,6 @@ const MainPage: React.FC = () => {
       <NavBar />
       <main>
         <Hero />
-        <About />
       </main>
       <Footer />
     </>
