@@ -26,8 +26,9 @@ export default {
         'inner-lg': 'inset 0 2px 10px 0 rgba(0, 0, 0, 0.05)',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      },
+  'custom-bg': "url('https://images3.alphacoders.com/120/thumb-1920-1209094.jpg')",
+  'custom-bg-dark': "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images3.alphacoders.com/120/thumb-1920-1209094.jpg')",
+}
     },
   },
   plugins: [],
