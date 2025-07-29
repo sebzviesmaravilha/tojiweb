@@ -195,15 +195,15 @@ const Hero: React.FC = () => {
 
                 {/* About - Discord style note */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ABOUT ME</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">hakkımda</h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    {discordUser?.about || 'Modern web deneyimleri oluşturmaya odaklanan tutkulu bir geliştirici. React, TypeScript ve Node.js ekosisteminde uzmanlaşmış full-stack developer.'}
+                    {discordUser?.about || 'mami iste cok bilgiye gerek yok gizli adamlariz'}
                   </p>
                 </div>
 
                 {/* Discord Activity Status */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ACTIVITY</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">aktivite</h3>
                   {currentActivity ? (
                     <div className="space-y-1">
                       <div className="flex items-center gap-2">
@@ -237,25 +237,25 @@ const Hero: React.FC = () => {
 
                 {/* Spotify Integration - Discord style */}
                 <div className="p-4 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-slate-700/40 dark:border-slate-600/20">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">SPOTIFY</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">spotify</h3>
                   <SpotifyNowPlaying />
                 </div>
 
                 {/* Roles - Discord Style */}
                 <div className="mb-4">
-                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ROLES</h3>
+                  <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">tags</h3>
                   <div className="flex flex-wrap gap-2">
 <span
   className="px-2 py-1 text-xs font-medium rounded-md"
   style={{ backgroundColor: 'rgba(88, 101, 242, 0.2)', color: 'rgb(88, 101, 242)' }}
 >
-  @toji
+  #toji
 </span>
 <span
   className="px-2 py-1 text-xs font-medium rounded-md"
   style={{ backgroundColor: 'rgba(235, 69, 158, 0.2)', color: 'rgb(235, 69, 158)' }}
 >
-  @aphe
+  #aphe
 </span>
 
                   </div>
@@ -292,31 +292,11 @@ const Hero: React.FC = () => {
             {/* Welcome Banner */}
             <div className="p-8 bg-white shadow-xl dark:bg-slate-800 rounded-2xl">
               <h2 className="mb-4 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-                Merhaba, Ben {discordUser?.username || 'Developer'}! 👋
+                 ben {discordUser?.username || 'Developer'}!
               </h2>
               <p className="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                Full-stack web geliştirme konusunda uzmanlaşmış, modern teknolojileri kullanarak yaratıcı çözümler üreten bir yazılım geliştiricisiyim.
+                kendi capimda takiliom
               </p>
-              <div className="flex flex-wrap gap-3">
-                <motion.a
-                  href="#contact"
-                  className="flex items-center gap-2 px-6 py-3 font-medium text-white transition-colors bg-blue-600 rounded-lg hover:bg-blue-700"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Mail size={18} />
-                  İletişime Geç
-                </motion.a>
-                <motion.a
-                  href="#projects"
-                  className="flex items-center gap-2 px-6 py-3 font-medium text-gray-800 transition-colors bg-gray-200 rounded-lg dark:bg-slate-700 hover:bg-gray-300 dark:hover:bg-slate-600 dark:text-white"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Code2 size={18} />
-                  Projeleri Gör
-                </motion.a>
-              </div>
             </div>
           </motion.div>
         </div>
