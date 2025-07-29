@@ -276,11 +276,11 @@ const Hero: React.FC = () => {
                       <Send size={16} />
                       <span className="text-sm font-medium">Discord</span>
                     </motion.a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+                   </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
       {/* Tooltip styles */}
       <style jsx global>{`
         .tooltip-container {
