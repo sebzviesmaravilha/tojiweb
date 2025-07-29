@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
   <section
     id="home"
     ref={containerRef}
-    className=className="relative min-h-screen pt-20 pb-10"
+    className="relative min-h-screen pt-20 pb-10"
   >
       
     <div className="container px-4 mx-auto">
