@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import {  Mail, Code2, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
+import { Mail, Code2, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
 import { FaDiscord } from 'react-icons/fa';
 import { useAppStore } from '../../store';
 import DiscordStatus from '../DiscordStatus';
