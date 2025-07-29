@@ -281,27 +281,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* Right Side - Enhanced Content */}
-          <motion.div
-            className="flex-1 space-y-6"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            {/* Welcome Banner */}
-            <div className="p-8 bg-white shadow-xl dark:bg-slate-800 rounded-2xl">
-              <h2 className="mb-4 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-                 ben {discordUser?.username || 'Developer'}!
-              </h2>
-              <p className="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                kendi capimda takiliom
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
       {/* Tooltip styles */}
       <style jsx global>{`
         .tooltip-container {
