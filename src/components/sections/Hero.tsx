@@ -110,12 +110,12 @@ const Hero: React.FC = () => {
                 onError={(e) => {
                   console.error("Banner image failed to load:", discordUser.banner_url);
                   e.currentTarget.src =
-                    "https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+                    "https://images3.alphacoders.com/120/thumb-1920-1209094.jpg";
                 }}
               />
             ) : (
               <img
-                src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images3.alphacoders.com/120/thumb-1920-1209094.jpg"
                 alt="Default Banner"
                 className="object-cover w-full h-full"
               />
