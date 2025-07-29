@@ -261,7 +261,7 @@ const Hero: React.FC = () => {
 
               {/* Social Links */}
               <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">BAĞLANTILAR</h3>
+                <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">links</h3>
                 <div className="flex flex-wrap gap-3">
                   <motion.a
                     href="https://discord.gg/403"
