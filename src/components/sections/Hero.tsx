@@ -91,7 +91,6 @@ const Hero: React.FC = () => {
     ref={containerRef}
     className="relative min-h-screen pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-blue-950"
   >
-    <body class="bg-custom-bg-dark bg-cover bg-center bg-no-repeat bg-fixed">
       
     <div className="container px-4 mx-auto">
       <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
