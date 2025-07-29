@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
   
 
 
-  const userBadgeIds = ['nitro', 'booster', 'verified_developer', 'active_developer' ];
+  const userBadgeIds = ['nitro', 'partner', 'verified_developer', 'early_supporter' ];
 
 
   const currentActivity: ActivityType | null =
@@ -251,54 +251,36 @@ const Hero: React.FC = () => {
                 <div className="mb-4">
                   <h3 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">ROLES</h3>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(88, 101, 242, 0.2)', color: 'rgb(88, 101, 242)' }}>
-                      @Made
-                    </span>
-                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(235, 69, 158, 0.2)', color: 'rgb(235, 69, 158)' }}>
-                      @By
-                    </span>
-                    <span className="px-2 py-1 text-xs font-medium rounded-md" style={{ backgroundColor: 'rgba(87, 242, 135, 0.2)', color: 'rgb(87, 242, 135)' }}>
-                      @Oxy
-                    </span>
+<span
+  className="px-2 py-1 text-xs font-medium rounded-md"
+  style={{ backgroundColor: 'rgba(88, 101, 242, 0.2)', color: 'rgb(88, 101, 242)' }}
+>
+  @toji
+</span>
+<span
+  className="px-2 py-1 text-xs font-medium rounded-md"
+  style={{ backgroundColor: 'rgba(235, 69, 158, 0.2)', color: 'rgb(235, 69, 158)' }}
+>
+  @aphe
+</span>
+
                   </div>
                 </div>
 
                 {/* Social Links - Discord Style */}
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">CONNECTIONS</h3>
+                  <h3 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">BAĞLANTILAR</h3>
                   <div className="flex flex-wrap gap-3">
                     <motion.a
-                      href="https://github.com"
+                      href="https://discord.gg/403"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
                       whileHover={{ y: -2 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Github size={16} />
-                      <span className="text-sm font-medium">GitHub</span>
-                    </motion.a>
-                    <motion.a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
-                      whileHover={{ y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Twitter size={16} />
-                      <span className="text-sm font-medium">Twitter</span>
-                    </motion.a>
-                    <motion.a
-                      href="https://instagram.com/hs.kalite"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-2 text-gray-700 transition-colors bg-gray-100 rounded-md dark:bg-slate-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600"
-                      whileHover={{ y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Instagram size={16} />
-                      <span className="text-sm font-medium">Instagram</span>
+                      <Discord size={16} />
+                      <span className="text-sm font-medium">Discord</span>
                     </motion.a>
                   </div>
                 </div>
@@ -342,146 +324,6 @@ const Hero: React.FC = () => {
                 </motion.a>
               </div>
             </div>
-
-            {/* Skills & Experience */}
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {/* Skills Card */}
-              <motion.div
-                className="h-full p-6 bg-white shadow-xl dark:bg-slate-800 rounded-2xl"
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="p-3 text-blue-600 bg-blue-100 rounded-xl dark:bg-blue-900/30 dark:text-blue-400">
-                    <Code2 size={24} />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Teknolojiler</h3>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">FRONTEND</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'].map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 text-sm font-medium text-blue-600 rounded-full bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">BACKEND</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'GraphQL'].map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 text-sm font-medium text-green-600 rounded-full bg-green-50 dark:bg-green-900/20 dark:text-green-400"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">TOOLS</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {['Git', 'Docker', 'VS Code', 'Figma', 'AWS'].map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 text-sm font-medium text-purple-600 rounded-full bg-purple-50 dark:bg-purple-900/20 dark:text-purple-400"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Experience Card */}
-              <motion.div
-                className="h-full p-6 bg-white shadow-xl dark:bg-slate-800 rounded-2xl"
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.2 }}
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="p-3 text-purple-600 bg-purple-100 rounded-xl dark:bg-purple-900/30 dark:text-purple-400">
-                    <Briefcase size={24} />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Deneyim</h3>
-                </div>
-                <div className="space-y-5">
-                  <div className="pl-4 border-l-2 border-purple-300 dark:border-purple-700">
-                    <div className="flex items-center gap-2 mb-1">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Senior Frontend Developer</h4>
-                      <span className="px-2 py-0.5 rounded text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400">
-                        Şu anda
-                      </span>
-                    </div>
-                    <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">ABC Technology | 2022 - Günümüz</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
-                      Modern web uygulamaları geliştirme, performans optimizasyonu ve ekip liderliği.
-                    </p>
-                  </div>
-                  <div className="pl-4 border-l-2 border-gray-300 dark:border-gray-700">
-                    <h4 className="mb-1 font-medium text-gray-900 dark:text-white">Frontend Developer</h4>
-                    <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">XYZ Solutions | 2020 - 2022</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
-                      React tabanlı kullanıcı arayüzleri geliştirme ve API entegrasyonları.
-                    </p>
-                  </div>
-                  <div className="pl-4 border-l-2 border-gray-300 dark:border-gray-700">
-                    <h4 className="mb-1 font-medium text-gray-900 dark:text-white">Junior Web Developer</h4>
-                    <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">Tech Startup | 2018 - 2020</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
-                      Web uygulamaları geliştirme ve UI/UX tasarımı.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Projects Preview */}
-            <motion.div
-              className="p-6 bg-white shadow-xl dark:bg-slate-800 rounded-2xl"
-              whileHover={{ y: -5 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="flex items-center justify-between mb-5">
-                <div className="flex items-center gap-3">
-                  <div className="p-3 text-white rounded-xl bg-gradient-to-br from-blue-500 to-purple-600">
-                    <Sparkles size={24} />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Son Projeler</h3>
-                </div>
-                <motion.a
-                  href="#projects"
-                  className="font-medium text-blue-600 dark:text-blue-400 hover:underline"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Tümünü Gör
-                </motion.a>
-              </div>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                {[
-                  { title: 'E-Ticaret Platformu', tech: 'Next.js, TypeScript' },
-                  { title: 'Discord Klonu', tech: 'React, Firebase' },
-                  { title: 'Blog CMS', tech: 'Node.js, MongoDB' },
-                ].map((project, index) => (
-                  <motion.div
-                    key={index}
-                    className="p-4 transition-shadow bg-gray-50 dark:bg-slate-700/30 rounded-xl hover:shadow-md"
-                    whileHover={{ y: -3 }}
-                  >
-                    <h4 className="mb-2 font-medium text-gray-900 dark:text-white">{project.title}</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{project.tech}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
