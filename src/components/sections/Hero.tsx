@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Twitter, Instagram ,Linkedin, Mail, Code2, Sparkles, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
+import { Discord, Twitter, Instagram ,Linkedin, Mail, Code2, Sparkles, Briefcase, Music, Gamepad, Film, Activity } from 'lucide-react';
 import { useAppStore } from '../../store';
 import DiscordStatus from '../DiscordStatus';
 import SpotifyNowPlaying from '../SpotifyNowPlaying';
