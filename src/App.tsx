@@ -16,15 +16,12 @@ import Hero from './components/sections/Hero';
 
 const MainPage: React.FC = () => {
   return (
-    <>
-      <NavBar />
-      <main>
-        <Hero />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <Hero />
+    </main>
   );
 };
+
 
 function App() {
   const { effectiveTheme } = useTheme();
