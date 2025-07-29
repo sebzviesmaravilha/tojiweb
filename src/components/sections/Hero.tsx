@@ -188,14 +188,8 @@ const Hero: React.FC = () => {
 
                 {/* User Badges - Discord Style */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 text-xs font-medium text-blue-600 bg-blue-100 rounded-md dark:bg-blue-900/30 dark:text-blue-400">
-                    Developer
-                  </span>
-                  <span className="px-2 py-1 text-xs font-medium text-purple-600 bg-purple-100 rounded-md dark:bg-purple-900/30 dark:text-purple-400">
-                    Server Booster
-                  </span>
                   <span className="px-2 py-1 text-xs font-medium text-green-600 bg-green-100 rounded-md dark:bg-green-900/30 dark:text-green-400">
-                    discord.gg/vsc üyesi
+                    4 0 3
                   </span>
                 </div>
 
