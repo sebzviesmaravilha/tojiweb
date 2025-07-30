@@ -255,7 +255,7 @@ const Hero: React.FC = () => {
                     className="px-2 py-1 text-xs font-medium rounded-md"
                     style={{ backgroundColor: "rgba(235, 69, 158, 0.2)", color: "rgb(235, 69, 158)" }}
                   >
-                    #aphe
+                    #aki
                   </span>
                 </div>
               </div>
